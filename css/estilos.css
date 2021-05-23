@@ -1,0 +1,670 @@
+*{ 
+  margin: 0%; 
+  padding: 0%; 
+} 
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /*Reset para REMS - 62.5% = 10px de 16 px*/
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+body{
+  font-size: 1.6rem;
+  background-color: rgb(27, 2, 2); 
+  color: rgb(255, 255, 255); 
+}
+/* ESCRITURA */
+
+/* Global */
+.line-1 {
+  position: relative;
+  /* top: 10%; */
+  /* width: 24em; */
+  border-right: 2px solid rgba(255,255,255,.75);
+  /* font-size: 180%; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 24rem;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+
+ /* CONTENEDOR DE TODO*/  
+ #contenedor{ 
+  max-width: 100rem; 
+  margin: auto; 
+  margin-top: 2rem; 
+  margin-bottom: 2rem; 
+  border-radius: 2rem; 
+  overflow: hidden; 
+  } 
+ /*BARRA DE MENÚ*/
+ .navegacion{ 
+    width: 70%; 
+    max-width: 100rem; 
+    margin: 5% auto; 
+    background: rgb(231, 231, 231); 
+    border-radius: 2rem; 
+} 
+.navegacion ul{ 
+    list-style: none;   
+} 
+nav li{ 
+    position: relative; 
+    display: inline-block; 
+} 
+nav li a{ 
+ display: block; 
+ padding: 1.5rem 2rem; 
+ color: #353535; 
+ font-family: Impact, sans-serif; 
+ text-decoration: none; 
+ display: flex; 
+} 
+nav li a:hover{ 
+    color: rgb(231, 31, 31);     
+    transition: all .3s; 
+} 
+#menu{
+    display: none;
+}
+nav label { 
+    
+    display: none;
+  
+    user-select: none;
+  }
+  
+  /*MENU Hamburgesa Responsive*/
+@media screen and (max-width: 650px){ 
+    .navegacion{ 
+        width: 70%; 
+        max-width: 100rem; 
+        margin: 5% auto; 
+        background: rgb(90, 5, 5);
+        border-radius: 2rem; 
+    } 
+nav ul{
+    display: none;
+  }
+  
+ nav input:checked  ~ ul{
+    display:block;
+  }
+  
+nav  input {
+    display: none;
+  }
+  /*menu icono*/
+ nav label { 
+    
+    display: inline-block;
+    border: 1px solid black;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    user-select: none;
+  }
+
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  label:hover{
+    background: grey;
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  input:checked  label {
+    background: lightgrey; 
+  }
+  
+ 
+   /* Estilo del despliegue*/
+  nav li a {
+    display: block;
+    background: rgb(126, 16, 16);
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-decoration:none;
+    border-bottom: 1px solid rgb(44, 2, 2);
+  }
+/*ilo cuando el mouse pasa encima de cada link del menu*/
+  li a:hover {
+    filter: brightness(110%);
+  }
+  
+  nav li{ 
+     
+    display: block; 
+} 
+}
+/* titulo */
+#titulo {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*  HERO  */
+.hero--container{
+  display: block;
+  width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  clear: both;
+}
+
+.hero{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: 0 0;
+  padding: 0 0;
+  position: relative;
+}
+.hero-bg{
+  width: 99%;
+  height: inherit;
+  margin: 0 auto;
+  border-radius: 4rem;
+  border: 1rem solid rgb(49, 0, 0);
+  z-index: -1;
+}
+
+.hero-profile{
+  width:30%;
+  border-radius: 50%;
+
+  /*´Posicion*/
+  position:absolute;
+  top: 50%;
+  left : 50%;
+  transform:translate(-50%, -50%);/*Debido a que .hero no tiene alto*/
+  z-index: 1;
+}
+
+@media screen and (max-width: 1000px){
+  .hero--container{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .hero--container{
+    height: 70%;
+  }
+}
+
+ /*FOTO DE PERFIL*/
+  .foto_perfil img{
+    height:22.2rem ;
+    width:30rem ;
+  }
+
+ .imgRedonda {
+  width:300px;
+  height:300px;
+  border-radius:150px;
+  border:10px solid rgb(49, 0, 0);
+}
+
+
+ /*ANIMACION (sin funcion*/
+ 
+.animated-text{ 
+    color: #fff; 
+   
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+    background: transparent; 
+    padding: 0 4rem; 
+    height: 6rem; 
+    overflow: hidden; 
+  } 
+  .line{ 
+    text-transform: uppercase; 
+    text-align: center; 
+    font-size: 3rem; 
+    line-height: 6rem; 
+  }  
+  .line:first-child{ 
+    animation: anim 12s infinite; 
+  } 
+   
+  @keyframes anim { 
+    0%{ 
+      margin-top: 0; 
+    } 
+    10%{ 
+      margin-top: -60px; 
+    } 
+    20%{ 
+      margin-top: -120px; 
+    } 
+    30%{ 
+      margin-top: -180px; 
+    } 
+    40%{ 
+      margin-top: -240px; 
+    } 
+    50%{ 
+      margin-top: -300px; 
+    } 
+    60%{ 
+      margin-top:240 ; 
+    } 
+    70%{ 
+        margin-top:180 ; 
+      }
+    80%{ 
+        margin-top: 120; 
+      }
+    90%{ 
+        margin-top:60 ; 
+      }
+    100%{ 
+        margin-top: 0; 
+      }
+  } 
+
+
+ /* CONTENIDO de quien SOY*/
+
+#contenido { 
+    width: 68%; 
+    height: 80rem; 
+    float: left; 
+    background-color: rgb(87, 48, 48); 
+    margin-top: 1rem; 
+    margin-right: 1rem;     
+    margin-bottom: 1rem; 
+    border-radius: 2rem; 
+    background-clip: padding-box;
+    border:10px solid rgb(49, 0, 0);
+} 
+#contenido h2 { 
+    font-size: 3rem; 
+    text-align: center; 
+    margin-top: 2%;
+  
+} 
+#contenido p { 
+  font-size: 1.6rem; 
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+
+.btn-nav { 
+  padding: 0.5% 1%;
+  margin-left: 3%;
+  border-radius: 10%;
+}
+.btn-nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+ 
+@media screen and (max-width: 650px){ 
+    #contenido{ 
+        width: 90%;
+       height: 100%;
+        margin-left: 4%; 
+        margin-right: 4%; 
+    } 
+} 
+
+
+/*SERVICIOS*/
+
+
+#servicios { 
+  width: 68%; 
+  height: 80rem; 
+  float: left; 
+  background-color: rgb(77, 26, 26);
+  margin-top: 10px; 
+  margin-right: 10px;     
+  margin-bottom: 10px; 
+  border-radius: 20px;
+  background-clip: padding-box;
+  border:10px solid rgb(49, 0, 0) 
+} 
+ 
+
+.T1 h3 {
+  font-size: 1.8rem;
+  padding-top: 5%;
+  text-align: center;
+  
+}
+
+.btn-serv { 
+  margin-top: 80%;
+  padding: 0.5% 1%;
+  margin-left: 3%;
+  border-radius: 10%;
+}
+.btn-serv a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+/* imagenes de proyectos*/
+
+
+.imagen_servicios{ 
+  width: 100%;
+  margin-top: 1%; 
+  margin-left: 1%; 
+  position: relative; 
+} 
+
+
+
+/*acordeon*/
+#servicios .accordion {
+  max-width: 100%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  /*overflow: hidden;*/
+  font-family: rgb(99, 34, 34);
+  background-color: black;
+  border: 1px solid rgb(75, 68, 68);
+  
+}
+
+.accordion__label {
+  padding: 1.4rem 2rem;
+  display: block;
+  color: rgb(134, 81, 81);
+  font-size: 1.6rem;
+  text-align: left;
+  font-weight: 500;
+  margin-left: 0;
+  width: 93%;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+
+}
+
+
+.accordion__content {
+  padding: 1.4rem 2rem;
+}
+
+.accordion__label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../Assets/Images/Icon-feather-chevron-down.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.4s;
+}
+
+.accordion__content {
+  background: black;
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+/* contenedor servicio responsive  */
+@media screen and (max-width: 650px){ 
+  #servicios{ 
+      width: 90%;
+      height: 50rem;
+      margin-left: 4%; 
+      margin-right: 4%; 
+      
+  } 
+}
+
+
+
+ /* ASIDE/APARTADO DERECHO*/
+
+ .apartado_Derecho{ 
+    width: 27rem; 
+    height: 55rem; 
+    background-color: darkred; 
+    margin-block: 1rem; 
+    padding: 1rem;
+    float: right; 
+    border-radius: 2rem; 
+    background-clip: padding-box;
+    border:10px solid rgb(49, 0, 0)
+} i
+.apartado_Derecho h2{ 
+    margin-top: 3rem; 
+    font-size: 2.5rem; 
+    text-align: center; 
+} 
+@media screen and (max-width: 650px){ 
+    .apartado_Derecho{ 
+    width: 90%;
+    height: 12%; 
+    margin-left: 4%; 
+    margin-right: 4%; 
+ 
+} 
+} 
+ 
+@media screen and (max-width: 650px){ 
+    .apartado_Derecho h2{ 
+        margin-top: 5%; 
+        margin-block-end: 10%;
+    } 
+} 
+
+
+
+
+
+/* FORMULARIO */ 
+
+.contact_form{  
+   
+    width: 50rem; 
+    height: 80rem; 
+    float: left; 
+    background-color: rgb(92, 44, 44); 
+    margin-top: 2rem;
+    padding: 2rem;   
+    border-radius: 2rem; 
+    background-clip: padding-box;
+    border:10px solid rgb(49, 0, 0)
+    
+  }
+  
+  
+  .contact_form input{
+    background-color: #fbfbfb; 
+    width: 42rem; 
+    height: 6rem; 
+    border-radius: 0.5rem;  
+    border-style: solid; 
+    border-width: 0.1rem; 
+    border-color: #1af54a; 
+    margin: 2rem;
+    margin-top: 1rem;  
+    padding-left: 1rem;
+    margin-bottom: 1rem; 
+  }
+  
+  
+  .contact_form textarea{
+    background-color: #fbfbfb; 
+    width: 40.5rem; 
+    height: 15rem; 
+    border-radius: 0.5rem;  
+    border-style: solid;    
+    border-color: #1af54a; 
+    margin: 2rem;
+    padding-left: 1rem; 
+    padding-top: 1.5rem; 
+   
+  }
+  
+  
+  .contact_form label{
+    margin-left:2rem ;
+    display: block; 
+    float: center;  
+  }
+  
+  
+  .contact_form button{
+    height: 4.5rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;   
+    margin-bottom: 2rem; 
+    margin-top: 1rem; 
+    margin-left: 2rem;  
+    text-transform: uppercase;
+    background-color: #39d7ff; 
+    color: #fff;
+    border-style: solid; 
+    border-radius: 1rem;  
+    width: 42rem;   
+    cursor: pointer;
+  }
+  
+  
+  .contact_form button p{
+    color: #fff; 
+  }
+  
+  
+  .contact_form span{ 
+    margin-left: 2ewm;
+    color: #faf603; 
+  }
+  
+  
+  
+  
+  
+  .contact_form h1{
+    font-size: 3.9rem;  
+    text-align: center; 
+    padding-bottom: 2rem; 
+    color: #868686;
+  }
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+@media screen and (max-width: 650px){ 
+    .contact_form{ 
+            width: 90%;  
+            height: 10%;   
+            margin-left: 4%; 
+            margin-right: 4%; 
+    }      
+}
+@media screen and (max-width: 650px){ 
+    .contact_form input{ 
+            width: 80%; 
+            
+            margin-left: 4%; 
+            margin-right: 4%; 
+    }    
+}
+    @media screen and (max-width: 650px){ 
+        .contact_form textarea{ 
+                width: 80%; 
+                
+                margin-left: 4%; 
+                margin-right: 4%; 
+    }
+}
+@media screen and (max-width: 650px){ 
+    .contact_form button{ 
+      width: 80%; 
+      margin-left: 4%; 
+      margin-right: 4%; 
+    }
+}
+@media screen and (max-width: 650px){ 
+  .contact_form span{ 
+    width: 80%;            
+    margin-left: 1%; 
+    margin-right: 4%; 
+  }
+}
+.copyright {
+  text-align: right;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/*----------Mensaje de envio-----------*/ 
+
+.formulario h1 {
+        font-size: 35px;
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+}
+.formulario a {
+    display: block;
+    padding: 10px 30px;
+    background: #39d7ff;
+    text-decoration: none;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    color: #FFF;
+}
+.formulario #enviar:hover {
+    background: #337186;
+    
+    
+}

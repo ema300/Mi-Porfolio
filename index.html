@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <title>Mi portfolio</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilos.css"> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+</head> 
+<body> 
+  <!-- CONTENEDOR DE TODO  -->
+  <section id="contenedor"> <!-- ***inicio seccion  -->
+  <!-- MENU  -->
+    <nav class="navegacion">
+      <input type="checkbox" id="menu">
+      <label for="menu"> ☰ </label>
+      <ul >
+        <li><a href="#nav">Inicio</a></li>
+        <li><a href="#soy">Quien soy</a></li> 
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul> 
+    </nav>
+
+  <!-- TITULO -->  
+  <div id="titulo">
+  
+    <h1 class="line-1 anim-typewriter">Nombre y Apellido</h1> 
+    <h2>Desarrollador Full Stack</h2>
+    <h2>Maquetador Web</h2>
+  </div>    
+  
+
+  <!-- mi foto --> 
+  <div class="hero--container">
+    <div class="hero">
+        <img src="imagenes/background-image.jpg" alt="fondo" class="hero-bg">
+        <img src="imagenes/silueta.jpg" alt="perfil" class="hero-profile">
+    </div>
+  </div>
+ 
+  
+  <!-- CONTENIDO DEL PORFOLIO  -->  
+   
+    <section id="contenido"> 
+      <article>
+        <div class="soy"> 
+          <h2 id="soy" >UN POCO DE MI </h2><br>
+          <p  class="line-1 anim-typewriter">Hola Soy desarrollador Front End. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste distinctio vel modi facilis, minima esse voluptatibus quo at facere sed. Ad suscipit vero perferendis totam quidem similique dignissimos voluptas.</p><br> 
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit maxime blanditiis nostrum adipisci impedit facilis praesentium suscipit officiis doloribus iusto laudantium, libero saepe illo voluptates minima consequatur? Ipsa, magni nostrum!</p><br> 
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eveniet. Nobis, tenetur minima illo earum perferendis est.Dolore, minima illo? Ut voluptatum illo corporis quaerat! Et ipsa odit sequi enit.</p> 
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit maxime blanditiis nostrum adipisci impedit facilis praesentium suscipit officiis doloribus iusto laudantium, libero saepe illo voluptates minima consequatur? Ipsa, magni nostrum!</p><br> 
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eveniet. Nobis, tenetur minima illo earum perferendis est.Dolore, minima illo? Ut voluptatum illo corporis quaerat! Et ipsa odit sequi enim aaaaaaaaaaaaaa.</p> 
+        </div>
+      </article> 
+      <br>
+    </section>
+
+
+
+  <!-- mis proyectos --> 
+    <section id="servicios"> 
+
+      <article>
+
+       
+          <div class="T1"><h3 id="T1">ALGO DE MIS TRABAJOS</h3> <br><br> 
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4>Título trabajo o tecnologías utilizadas</h4>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p> 
+                      <img class="imagen_servicios" src="https://siemprendes.com/wp-content/uploads/2019/07/ejemplo-web-dinamica-3.png">
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h4>Título trabajo o tecnologías utilizadas</h4>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      <img class="imagen_servicios" src="https://www.websitetooltester.com/wp-content/uploads/2017/06/jimdo-plantillas-ejemplos-blog-1.png"> 
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h4>Título trabajo o tecnologías utilizadas</h4>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      <img class="imagen_servicios" src="https://pomstandard.com/files/2018/07/colvin.jpg"> 
+                    </p>
+                   
+                </div>
+              </div>
+            </div>
+            
+              
+            
+          </div>      
+        </div> 
+      </article>
+
+
+         
+    </section>
+    
+  <!-- APARTADO DERECHO  -->  
+    <aside class="apartado_Derecho">
+      <h2>Lenguajes de Programación</h2>
+      <h4>Java</h4>
+        <progress id="barProgreso" max="100" value="90">  </progress>
+      <h4>JavaScript</h4>
+        <progress id="barProgreso" max="100" value="75">  </progress>
+      <h4>Python</h4>
+        <progress id="barProgreso" max="100" value="50"> </progress>
+      <h4>HTML</h4>
+        <progress id="barProgreso" max="100" value="90"> </progress>
+      <h4>CSS</h4>
+        <progress id="barProgreso" max="100" value="70">  </progress>
+      <h4>SQL</h4>
+        <progress id="barProgreso" max="100" value="60"> </progress>
+      <h4>PHP</h4>
+        <progress id="barProgreso" max="100" value="20">  </progress>
+      <h4>C++</h4>
+        <progress id="barProgreso" max="100" value="30">  </progress>
+      <h4>Assembrer</h4>
+        <progress id="barProgreso" max="100" value="40"> </progress>
+    </aside> <br> 
+
+     
+  <!-- formulario de contacto -->  
+    <section class="contact_form" id="contacto">
+      <div class="formulario">      
+        <h1>Formulario de contacto</h1>
+        <p>Soy tu candidato, No dudes en contactarme</p>
+        <form action="enviar.php" method="post">      <!-- envia el formulario con los datos completados -->      <label for="nombre" class="colocar_nombre">Nombre <span class="obligatorio">*</span></label>
+        <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+        <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+        <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+        <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
+        <input type="text" name="introducir_asunto" id="asunto" required placeholder="Escribe un asunto">
+        <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>                     
+        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea> <br>
+        <p>
+        <span class="obligatorio"> * </span>los campos son obligatorios.
+        </p>    
+
+  <!-- boton de envio formulario  -->  
+        <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+        </form>
+        </div>  
+        
+    </section> 
+
+    
+
+ 
+
+
+    
+
+  </section>  <!-- ***fin seccion CONTENEDOR  --> 
+  <div class="copyright">
+    <!-- Copyright -->
+    &copy; 2021 mi Porfolio. Derechos reservados.
+</div>
+</body> 
+</html> 
