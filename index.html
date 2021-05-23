@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 </head> 
 <body> 
+  
   <!-- CONTENEDOR DE TODO  -->
   <section id="contenedor"> <!-- ***inicio seccion  -->
   <!-- MENU  -->
@@ -26,17 +27,50 @@
   <!-- TITULO -->  
   <div id="titulo">
   
-    <h1 class="line-1 anim-typewriter">Nombre y Apellido</h1> 
+    <h1 class="line-1 anim-typewriter">ACUÑA DAVID EMANUEL</h1> 
     <h2>Desarrollador Full Stack</h2>
     <h2>Maquetador Web</h2>
   </div>    
   
+<!-- SOBRE MI CONTENIDO -->
 
+<script>
+var i = 0;
+var x = 0;
+var j=0;
+var parrafo1 = 'Soy Desarrollador, tengo 25 años, me gusta la musica, programar y en mi pasa tiempo me gusta tocar los instrumentos de música, aprender mas como desarrollador, pasar tiempo con mi familia.  ';
+var parrafo2='Empecé a programar en C++ en la escuela Técnica N°2 y de ahí nació mi pasión por todo lo relacionado  con la programación. La facilidad de aprender  y adaptarme al entorno me ayuda mucho a crecer como  profesional en sistemas. Actualmente me encuentro estudiando la carrera de Licenciatura en Sistemas correlativa con Técnicatura Superior en Informática y en cursos extras capacitando el conocimiento en las nuevas tecnoligías.';
+var parrafo3='En otro apartado podra ver los lenguajes de programación que eh aprendido y que tengo conocimiento hasta ahora. Mas abajo podrá encontrar mis trabajos realizados, mis habilidades y un formulario para contactarme. No dudes en contactarme ! Te espero ! ';
+var speed = 50;
+
+function typeWriter() {
+  if (i < parrafo1.length) {
+    document.getElementById("parrafo1").innerHTML += parrafo1.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+  if(i==parrafo1.length){
+    if (x < parrafo2.length) {
+    document.getElementById("parrafo2").innerHTML += parrafo2.charAt(x);
+    x++;
+    setTimeout(typeWriter, speed);
+  }
+  if(x==parrafo2.length){
+    if (j < parrafo3.length) {
+    document.getElementById("parrafo3").innerHTML += parrafo3.charAt(j);
+    j++;
+    setTimeout(typeWriter, speed);
+  }
+}
+}
+
+}
+</script>
   <!-- mi foto --> 
   <div class="hero--container">
     <div class="hero">
         <img src="imagenes/background-image.jpg" alt="fondo" class="hero-bg">
-        <img src="imagenes/silueta.jpg" alt="perfil" class="hero-profile">
+        <img src="./imagenes/perfil.jpg" alt="perfil" class="hero-perfil">
     </div>
   </div>
  
@@ -47,16 +81,40 @@
       <article>
         <div class="soy"> 
           <h2 id="soy" >UN POCO DE MI </h2><br>
-          <p  class="line-1 anim-typewriter">Hola Soy desarrollador Front End. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste distinctio vel modi facilis, minima esse voluptatibus quo at facere sed. Ad suscipit vero perferendis totam quidem similique dignissimos voluptas.</p><br> 
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit maxime blanditiis nostrum adipisci impedit facilis praesentium suscipit officiis doloribus iusto laudantium, libero saepe illo voluptates minima consequatur? Ipsa, magni nostrum!</p><br> 
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eveniet. Nobis, tenetur minima illo earum perferendis est.Dolore, minima illo? Ut voluptatum illo corporis quaerat! Et ipsa odit sequi enit.</p> 
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit maxime blanditiis nostrum adipisci impedit facilis praesentium suscipit officiis doloribus iusto laudantium, libero saepe illo voluptates minima consequatur? Ipsa, magni nostrum!</p><br> 
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eveniet. Nobis, tenetur minima illo earum perferendis est.Dolore, minima illo? Ut voluptatum illo corporis quaerat! Et ipsa odit sequi enim aaaaaaaaaaaaaa.</p> 
+          <p  class="line-2 anim-typewriter-2">Hola me llamo Emanuel<br> 
+          </p>
+          <button id="boton_mas_sobre_mi" onclick="typeWriter()">Haz Click mas sobre mi </button>
+          <p id="parrafo1"></p>
+          <p id="parrafo2"></p> 
+          <br><br>
+          <p id="parrafo3"></p>
         </div>
       </article> 
       <br>
     </section>
 
+  <!-- APARTADO DERECHO  -->  
+  <aside class="apartado_Derecho">
+    <h2>Lenguajes de Programación</h2>
+    <h4>Java</h4>
+      <progress id="barProgreso" max="100" value="90">  </progress>
+    <h4>JavaScript</h4>
+      <progress id="barProgreso" max="100" value="75">  </progress>
+    <h4>Python</h4>
+      <progress id="barProgreso" max="100" value="50"> </progress>
+    <h4>HTML</h4>
+      <progress id="barProgreso" max="100" value="90"> </progress>
+    <h4>CSS</h4>
+      <progress id="barProgreso" max="100" value="70">  </progress>
+    <h4>SQL</h4>
+      <progress id="barProgreso" max="100" value="60"> </progress>
+    <h4>PHP</h4>
+      <progress id="barProgreso" max="100" value="20">  </progress>
+    <h4>C++</h4>
+      <progress id="barProgreso" max="100" value="30">  </progress>
+    <h4>Assembrer</h4>
+      <progress id="barProgreso" max="100" value="40"> </progress>
+  </aside> <br> 
 
 
   <!-- mis proyectos --> 
@@ -112,40 +170,26 @@
                 </div>
               </div>
             </div>
-            
-              
-            
           </div>      
         </div> 
-      </article>
-
-
-         
+      </article>        
     </section>
     
-  <!-- APARTADO DERECHO  -->  
-    <aside class="apartado_Derecho">
-      <h2>Lenguajes de Programación</h2>
-      <h4>Java</h4>
-        <progress id="barProgreso" max="100" value="90">  </progress>
-      <h4>JavaScript</h4>
-        <progress id="barProgreso" max="100" value="75">  </progress>
-      <h4>Python</h4>
-        <progress id="barProgreso" max="100" value="50"> </progress>
-      <h4>HTML</h4>
-        <progress id="barProgreso" max="100" value="90"> </progress>
-      <h4>CSS</h4>
-        <progress id="barProgreso" max="100" value="70">  </progress>
-      <h4>SQL</h4>
-        <progress id="barProgreso" max="100" value="60"> </progress>
-      <h4>PHP</h4>
-        <progress id="barProgreso" max="100" value="20">  </progress>
-      <h4>C++</h4>
-        <progress id="barProgreso" max="100" value="30">  </progress>
-      <h4>Assembrer</h4>
-        <progress id="barProgreso" max="100" value="40"> </progress>
-    </aside> <br> 
+ <!-- APARTADO DERECHO  -->  
+ <aside class="apartado_Derecho_habilidades">
+  <h2>HABILIDADES</h2> <br><br>
+  <h4 >&#x2714; AUTODIDACTA </h4><br><br>
+  
+  <h4 >&#x2714; CREATIVO </h4><br><br>
+    
+  <h4>&#x2714; RESPONSABLE</h4><br><br>
+    
+  <h4>&#x2714; PROACTIVO</h4><br><br>
 
+  <h4>&#x2714; ADAPTABLE</h4><br><br>
+
+
+</aside> <br> 
      
   <!-- formulario de contacto -->  
     <section class="contact_form" id="contacto">
