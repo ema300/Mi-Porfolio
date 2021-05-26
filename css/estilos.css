@@ -133,16 +133,15 @@ nav  input {
     display: none;
   }
   /*menu icono*/
- nav label { 
-    
+  nav label {
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid #9e6c71;
     width: 3rem;
+    background-color: #714145;
     height: 3rem;
     text-align: center;
     user-select: none;
-  }
-
+}
   /* Estilo del boton cuando se pasa el mouse por encima*/
   label:hover{
     background: grey;
