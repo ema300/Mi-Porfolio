@@ -548,17 +548,17 @@ nav  input {
 
  /* ASIDE/APARTADO DERECHO HABILIDADES*/
 
- .apartado_Derecho_habilidades{ 
-    width: 27rem; 
-    height: 55rem; 
-    background-color: rgb(41, 17, 17); 
-    margin-block: 1rem; 
-    padding: 1rem;
-    float: right; 
-    border-radius: 2rem; 
-    background-clip: padding-box;
-    border:10px solid rgb(49, 0, 0)
-} i
+ .apartado_Derecho_habilidades {
+  width: 27rem;
+  height: 55rem;
+  background-color: rgb(95 51 51);
+  margin-block: 1rem;
+  padding: 1rem;
+  float: right;
+  border-radius: 2rem;
+  background-clip: padding-box;
+  border: 10px solid rgb(49, 0, 0);
+}
 .apartado_Derecho_habilidades h2{ 
     margin-top: 3rem; 
     font-size: 2.5rem; 
