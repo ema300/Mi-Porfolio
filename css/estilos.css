@@ -16,8 +16,6 @@ body{
   color: rgb(255, 255, 255); 
 }
 /* ESCRITURA */
-
-/* tITULO  */
 .line-1 {
   position: relative;
   /* top: 10%; */
@@ -67,14 +65,19 @@ to{border-right-color: transparent;}
 }
 
  /* CONTENEDOR DE TODO*/  
- #contenedor{ 
-  max-width: 100rem; 
-  margin: auto; 
-  margin-top: 2rem; 
-  margin-bottom: 2rem; 
-  border-radius: 2rem; 
-  overflow: hidden; 
-  } 
+ #contenedor {
+  max-width: 100rem;
+  margin: auto;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 650px){
+  #contenedor {
+    margin-top: 2rem;   
+  }
+}
  /*BARRA DE MENÚ*/
  .navegacion{ 
     width: 70%; 
@@ -113,7 +116,8 @@ nav label {
   }
   
   /*MENU Hamburgesa Responsive*/
-@media screen and (max-width: 650px){ 
+@media screen and (max-width: 650px){
+ 
     .navegacion{ 
         width: 70%; 
         max-width: 100rem; 
@@ -173,12 +177,17 @@ nav  input {
     display: block; 
 } 
 }
-/* titulo */
+/* TITULO */
 #titulo {
   padding: 1rem;
-  margin: 1rem;
+  margin-top: -2rem;
 }
-
+@media screen and (max-width: 650px){ 
+  #titulo {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  } 
 /*  PORTADA  */
 .hero--container{
   display: block;
