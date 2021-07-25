@@ -12,7 +12,7 @@ box-sizing: inherit;
 }
 body{
   font-size: 1.6rem;
-  background-color: rgb(27, 2, 2); 
+  background-color: rgb(0, 0, 0); 
   color: rgb(255, 255, 255); 
 }
 /* ESCRITURA */
@@ -25,6 +25,7 @@ body{
   white-space: nowrap;
   overflow: hidden;
 }
+
 
 /* Animation */
 .anim-typewriter{
@@ -66,40 +67,83 @@ to{border-right-color: transparent;}
 
  /* CONTENEDOR DE TODO*/  
  #contenedor {
-  max-width: 100rem;
+  width: 95%;
   margin: auto;
   margin-top: -3rem;
   margin-bottom: 2rem;
   border-radius: 2rem;
   overflow: hidden;
 }
-@media screen and (max-width: 650px){
-  #contenedor {
-    margin-top: 2rem;   
-  }
+.navegacion{ 
+  width: 70%; 
+  max-width: 100rem; 
+  margin: 5% auto; 
+  background: rgb(231, 231, 231); 
+  border-radius: 2rem; 
+} 
+.navegacion ul{ 
+  list-style: none;   
+} 
+nav li{ 
+  position: relative; 
+  display: inline-block; 
+} 
+nav li a{ 
+display: block; 
+padding: 1.5rem 2rem; 
+color: #353535; 
+font-family: Impact, sans-serif; 
+text-decoration: none; 
+display: flex; 
+} 
+nav li a:hover{ 
+  color: rgb(231, 31, 31);     
+  transition: all .3s; 
+} 
+#menu{
+  display: none;
+}
+nav label { 
+  
+  display: none;
+
+  user-select: none;
 }
  /*BARRA DE MENÚ*/
- .navegacion{ 
-    width: 70%; 
-    max-width: 100rem; 
-    margin: 5% auto; 
-    background: rgb(231, 231, 231); 
-    border-radius: 2rem; 
-} 
+ @media screen and (max-width: 650px){
+   
+/* .navegacion {
+  width: 34%;
+ 
+  margin-top:  4rem;
+  margin-left: 0rem;
+  margin-bottom: 1rem;
+  background: rgb(31, 150, 31);
+  border-radius: 2rem;
+
+  position: absolute;
+  transform: translate(0%, 0%);
+  z-index: 1;
+}
+
 .navegacion ul{ 
     list-style: none;   
 } 
 nav li{ 
     position: relative; 
     display: inline-block; 
+    width: 100%;
 } 
 nav li a{ 
- display: block; 
- padding: 1.5rem 2rem; 
- color: #353535; 
- font-family: Impact, sans-serif; 
- text-decoration: none; 
- display: flex; 
+display: flex; 
+text-align: center;
+padding: 1.5rem 2rem; 
+padding-left: 26%;
+color: #d3cece; 
+
+font-family: Impact, sans-serif; 
+text-decoration: none; 
+
 } 
 nav li a:hover{ 
     color: rgb(231, 31, 31);     
@@ -113,81 +157,85 @@ nav label {
     display: none;
   
     user-select: none;
-  }
-  
-  /*MENU Hamburgesa Responsive*/
-@media screen and (max-width: 650px){
- 
-    .navegacion{ 
-        width: 70%; 
-        max-width: 100rem; 
-        margin: 5% auto; 
-        background: rgb(90, 5, 5);
-        border-radius: 2rem; 
-    } 
-nav ul{
-    display: none;
-  }
-  
- nav input:checked  ~ ul{
-    display:block;
-  }
-  
+  } */
+
+
+  .navegacion {
+    width: 70%;
+    max-width: 100rem;
+    margin: 5% auto;
+    background: rgb(36 76 20 / 65%);
+    border-radius: 2rem;
+    position: absolute;
+} ul{
+display: none;
+}
+
+nav input:checked  ~ ul{
+display:flex;
+}
+
 nav  input {
-    display: none;
-  }
-  /*menu icono*/
-  nav label {
-    display: inline-block;
-    border: 1px solid #9e6c71;
-    width: 3rem;
-    background-color: #714145;
-    height: 3rem;
-    text-align: center;
-    user-select: none;
+display: none;
 }
-  /* Estilo del boton cuando se pasa el mouse por encima*/
-  label:hover{
-    background: grey;
-  }
-  
-  /* Estilo del boton cuando el menú está expandido*/
-  input:checked  label {
-    background: lightgrey; 
-  }
-  
- 
-   /* Estilo del despliegue*/
-  nav li a {
-    display: block;
-    background: rgb(126, 16, 16);
-    margin: 0;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    text-decoration:none;
-    border-bottom: 1px solid rgb(44, 2, 2);
-  }
+/*menu icono*/
+nav label {
+  display: inline-block;
+  border: 1px solid #4bb153;
+  width: 5rem;
+  background-color: #2f6f15;
+  height: 5rem;
+  text-align: center;
+  user-select: none;
+  /* margin-top: -1rem; */
+  padding-top: 1rem;
+}
+/* Estilo del boton cuando se pasa el mouse por encima*/
+
+
+/* Estilo del boton cuando el menú está expandido*/
+input:checked  label {
+background: rgb(131, 48, 48); 
+}
+
+
+/* Estilo del despliegue*/
+nav li a {
+  display: block;
+  /* background: rgb(0 0 0 / 63%); */
+  margin: 0;
+  color: rgb(165, 165, 165);
+  padding: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(212 7 7 / 62%);
+}
 /*ilo cuando el mouse pasa encima de cada link del menu*/
-  li a:hover {
-    filter: brightness(110%);
-  }
-  
-  nav li{ 
-     
-    display: block; 
-} 
+li a:hover {
+filter: brightness(110%);
 }
+
+nav li{ 
+ 
+display: block; 
+} 
+
+
+ }
+ 
+  
+
+
 /* TITULO */
 #titulo {
   padding: 1rem;
-  margin-top: -2rem;
+  margin-top: 1rem;
+  width: 100%;
+  height: 30rem;
+  position: absolute;
+  transform: translate(5%,100%);
+  z-index: 1;
 }
-@media screen and (max-width: 650px){ 
-  #titulo {
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  } 
+
 /*  PORTADA  */
 .hero--container{
   display: block;
@@ -206,23 +254,14 @@ nav  input {
   position: relative;
 }
 .hero-bg {
-  width: 100%;
-  height: inherit;
+  width: 170%;
+  height: 74rem;
   /* margin: 0; */
-  border-radius: 4rem;
-  border: 10px solid rgb(49, 0, 0);
+  border-radius: 0rem;
+  /* border: 10px solid rgb(150 150 150); */
   z-index: -1;
+  transform: translate(-24%, 0%);
 }
-@media screen and (max-width: 650px){ 
-  .hero-bg {
-    width: 100%;
-    height: inherit;
-    margin-block-end: 8rem;
-    border-radius: 4rem;
-     border: none; 
-    z-index: -1;
-}
-  } 
 /*FOTO DE PERFIL*/
 
 .hero-perfil {
@@ -233,34 +272,54 @@ nav  input {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-121%, -35%);
+  transform: translate(-160%, 55%);
   z-index: 1;
 }
+
 @media screen and (max-width: 650px){ 
-  .hero-perfil {
-    width: 20rem;
-    border-radius: 50%;
-    /* border: 1px solid rgb(0, 0, 0); */
-    height: 20rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-53%, -33%);
-    z-index: 1;
-}
-}
-@media screen and (max-width: 650px){
-  .hero--container{
-    width: 90%;
-    height: 70%;
-  }
+  .hero-bg {
+    width: 45%;
+    height: 63rem;
+    /* margin: 0; */
+    border-radius: 0rem;
+    /* border: 10px solid rgb(150 150 150); */
+    z-index: -1;
+    transform: translate(-24%, 0%);
+    position: relative;  
 }
 
+/* PERFIL */
+.hero-perfil {
+  width: 30rem;
+  border-radius: 50%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  height: 30rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-160%, 55%);
+  z-index: 1;
+}
+
+/* TITULO RES */
+
+#titulo {
+  /* padding: 1rem; */
+  /* margin-top: 1rem; */
+  /* width: 100%; */
+  /* height: 30rem; */
+  /* position: absolute; */
+  transform: translate(2%,59%);
+  z-index: 1;
+}
+
+
+}
 
  /*ANIMACION (sin funcion*/
  
 .animated-text{ 
-    color: #fff; 
+    color: rgb(255, 255, 255); 
    
     top: 50%; 
     left: 50%; 
@@ -279,56 +338,21 @@ nav  input {
   .line:first-child{ 
     animation: anim 12s infinite; 
   } 
-   
-  @keyframes anim { 
-    0%{ 
-      margin-top: 0; 
-    } 
-    10%{ 
-      margin-top: -60px; 
-    } 
-    20%{ 
-      margin-top: -120px; 
-    } 
-    30%{ 
-      margin-top: -180px; 
-    } 
-    40%{ 
-      margin-top: -240px; 
-    } 
-    50%{ 
-      margin-top: -300px; 
-    } 
-    60%{ 
-      margin-top:240 ; 
-    } 
-    70%{ 
-        margin-top:180 ; 
-      }
-    80%{ 
-        margin-top: 120; 
-      }
-    90%{ 
-        margin-top:60 ; 
-      }
-    100%{ 
-        margin-top: 0; 
-      }
-  } 
+
 
 
  /* CONTENIDO de quien SOY*/
 
  #contenido {
-  width: 68%;
+  width: 100%;
   float: left;
-  background-color: rgb(37, 0, 0); 
-  margin-top: 1rem;
+  background-color: rgb(0 0 0);
+  margin-top: 15rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 2rem;
   background-clip: padding-box;
-  border: 10px solid rgb(49, 0, 0);
+  border: 10px solid rgb(17 49 0);
 }
 #contenido h2 { 
     font-size: 3rem; 
@@ -344,90 +368,56 @@ nav  input {
 
 }
 #boton_mas_sobre_mi {
-    display: block;
-    padding: 10px 30px;
-    background: #39d7ff;
-    text-decoration: none;
-    margin-top: 3rem;
-    border-radius: 0.5rem;
-    color: #FFF;
+  display: block;
+  padding: 10px 30px;
+  background: #2cc51a;
+  text-decoration: none;
+  margin: 4rem;
+  border-radius: 1rem;
+  color: #FFF;
 }
 #boton_mas_sobre_mi:hover{
  
-    background: #337186;
+  background: #2cc51a;
 }
-/*.btn-nav { 
-  padding: 0.5% 1%;
-  margin-left: 3%;
-  border-radius: 10%;
-}
-.btn-nav a {
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-*/
 
- 
-@media screen and (max-width: 650px){ 
-    #contenido{ 
-        width: 90%;
-       height: 100%;
-        margin-left: 4%; 
-        margin-right: 4%; 
-    } 
-} 
 
 
  /* ASIDE/APARTADO DERECHO*/
 
- .apartado_Derecho{ 
-  width: 27rem; 
-  height: 55rem; 
-  background-color: darkred; 
-  margin-block: 1rem; 
+ .apartado_Derecho {
+  width: 100%;
+  height: 53rem;
+  /* background-color: darkred; */
+  margin-block: 1rem;
   padding: 1rem;
-  float: right; 
-  border-radius: 2rem; 
+  float: right;
+  border-radius: 2rem;
   background-clip: padding-box;
-  border:10px solid rgb(49, 0, 0)
-} i
+  border: 10px solid #2a4f86;
+}
 .apartado_Derecho h2{ 
   margin-top: 3rem; 
   font-size: 2.5rem; 
   text-align: center; 
 } 
-@media screen and (max-width: 650px){ 
-  .apartado_Derecho{ 
-  width: 90%;
-  height: 12%; 
-  margin-left: 4%; 
-  margin-right: 4%; 
 
-} 
-} 
-
-@media screen and (max-width: 650px){ 
-  .apartado_Derecho h2{ 
-      margin-top: 5%; 
-      margin-block-end: 10%;
-  } 
-}  
 
 /*SERVICIOS*/
 
 
-#servicios { 
-  width: 68%; 
-  height: 80rem; 
-  float: left; 
-  background-color: rgb(77, 26, 26);
-  margin-top: 10px; 
-  margin-right: 10px;     
-  margin-bottom: 10px; 
+#servicios {
+  width: 100%;
+  height: 100%;
+  float: left;
+
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 20px;
   background-clip: padding-box;
-  border:10px solid rgb(49, 0, 0) 
-} 
+  border: 10px solid rgb(0 49 49);
+}
  
 
 .T1 h3 {
@@ -476,7 +466,7 @@ nav  input {
 .accordion__label {
   padding: 1.4rem 2rem;
   display: block;
-  color: rgb(134, 81, 81);
+  /* color: rgb(134, 81, 81); */
   font-size: 1.6rem;
   text-align: left;
   font-weight: 500;
@@ -534,52 +524,30 @@ nav  input {
   transform: translateY(-50%) rotate(0.5turn);
 }
 /* contenedor servicio responsive  */
-@media screen and (max-width: 650px){ 
-  #servicios{ 
-      width: 90%;
-      height: 50rem;
-      margin-left: 4%; 
-      margin-right: 4%; 
-      
-  } 
-}
+
 
 
 
  /* ASIDE/APARTADO DERECHO HABILIDADES*/
-
  .apartado_Derecho_habilidades {
-  width: 27rem;
-  height: 55rem;
-  background-color: rgb(95 51 51);
+  width: 100%;
+  height: 50rem;
+  /* background-color: rgb(95 51 51); */
   margin-block: 1rem;
   padding: 1rem;
   float: right;
   border-radius: 2rem;
   background-clip: padding-box;
-  border: 10px solid rgb(49, 0, 0);
+  border: 10px solid rgb(66 97 50);
 }
 .apartado_Derecho_habilidades h2{ 
     margin-top: 3rem; 
     font-size: 2.5rem; 
     text-align: center; 
 } 
-@media screen and (max-width: 650px){ 
-    .apartado_Derecho_habilidades{ 
-    width: 90%;
-    height: 12%; 
-    margin-left: 4%; 
-    margin-right: 4%; 
+
  
-} 
-} 
  
-@media screen and (max-width: 650px){ 
-    .apartado_Derecho_habilidades h2{ 
-        margin-top: 5%; 
-        margin-block-end: 10%;
-    } 
-} 
 
 
 
@@ -587,72 +555,65 @@ nav  input {
 
 /* FORMULARIO */ 
 
-.contact_form{  
-   
-    width: 50rem; 
-    height: 80rem; 
-    float: left; 
-    background-color: rgb(92, 44, 44); 
-    margin-top: 2rem;
-    padding: 2rem;   
-    border-radius: 2rem; 
-    background-clip: padding-box;
-    border:10px solid rgb(49, 0, 0)
-    
-  }
+.contact_form {
+  width: 100%;
+  height: 92rem;
+  float: left;
+  /* background-color: rgb(92, 44, 44); */
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-clip: padding-box;
+  border: 10px solid rgb(14 82 13);
+}
+  
+.contact_form input {
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 6rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #1af54a;
+  margin: 0rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+  
+.contact_form textarea {
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 23rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: #1af54a;
+  /* margin: 2rem; */
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+}
+.contact_form label {
+  margin-left: 0rem;
+  float: center;
+}
   
   
-  .contact_form input{
-    background-color: #fbfbfb; 
-    width: 42rem; 
-    height: 6rem; 
-    border-radius: 0.5rem;  
-    border-style: solid; 
-    border-width: 0.1rem; 
-    border-color: #1af54a; 
-    margin: 2rem;
-    margin-top: 1rem;  
-    padding-left: 1rem;
-    margin-bottom: 1rem; 
-  }
-  
-  
-  .contact_form textarea{
-    background-color: #fbfbfb; 
-    width: 40.5rem; 
-    height: 15rem; 
-    border-radius: 0.5rem;  
-    border-style: solid;    
-    border-color: #1af54a; 
-    margin: 2rem;
-    padding-left: 1rem; 
-    padding-top: 1.5rem; 
-   
-  }
-  
-  
-  .contact_form label{
-    margin-left:2rem ;
-    display: block; 
-    float: center;  
-  }
-  
-  
-  .contact_form button{
-    height: 4.5rem; 
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;   
-    margin-bottom: 2rem; 
-    margin-top: 1rem; 
-    margin-left: 2rem;  
-    text-transform: uppercase;
-    background-color: #39d7ff; 
-    color: #fff;
-    border-style: solid; 
-    border-radius: 1rem;  
-    width: 42rem;   
-    cursor: pointer;
-  }
+.contact_form button {
+  height: 4.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  /* margin-left: 2rem; */
+  text-transform: uppercase;
+  background-color: #5bce20;
+  color: #fff;
+  border-style: solid;
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
   
   
   .contact_form button p{
@@ -674,44 +635,7 @@ nav  input {
   }
   
  
-@media screen and (max-width: 650px){ 
-    .contact_form{ 
-            width: 90%;  
-            height: 10%;   
-            margin-left: 4%; 
-            margin-right: 4%; 
-    }      
-}
-@media screen and (max-width: 650px){ 
-    .contact_form input{ 
-            width: 80%; 
-            
-            margin-left: 4%; 
-            margin-right: 4%; 
-    }    
-}
-    @media screen and (max-width: 650px){ 
-        .contact_form textarea{ 
-                width: 80%; 
-                
-                margin-left: 4%; 
-                margin-right: 4%; 
-    }
-}
-@media screen and (max-width: 650px){ 
-    .contact_form button{ 
-      width: 80%; 
-      margin-left: 4%; 
-      margin-right: 4%; 
-    }
-}
-@media screen and (max-width: 650px){ 
-  .contact_form span{ 
-    width: 80%;            
-    margin-left: 1%; 
-    margin-right: 4%; 
-  }
-}
+
 .copyright {
   text-align: right;
   margin: 1rem;
@@ -736,7 +660,7 @@ nav  input {
     color: #FFF;
 }
 .formulario #enviar:hover {
-    background: #337186;
+    background: #33a000;
     
     
 }
