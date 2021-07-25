@@ -189,6 +189,7 @@ nav label {
   user-select: none;
   /* margin-top: -1rem; */
   padding-top: 1rem;
+  border-radius: 0.5rem;
 }
 /* Estilo del boton cuando se pasa el mouse por encima*/
 
@@ -204,7 +205,7 @@ nav li a {
   display: block;
   /* background: rgb(0 0 0 / 63%); */
   margin: 0;
-  color: rgb(165, 165, 165);
+  color: rgb(214 190 190);
   padding: 1rem;
   text-decoration: none;
   border-bottom: 1px solid rgb(212 7 7 / 62%);
@@ -442,14 +443,13 @@ display: block;
 /* imagenes de proyectos*/
 
 
-.imagen_servicios{ 
-  width: 100%;
-  margin-top: 1%; 
-  margin-left: 1%; 
-  position: relative; 
-} 
-
-
+.imagen_servicios {
+  width: 98%;
+  height: 22rem;
+  margin-top: 1%;
+  margin-left: 1%;
+  position: relative;
+}
 
 /*acordeon*/
 #servicios .accordion {
@@ -480,11 +480,9 @@ display: block;
 
 .accordion-button:not(.collapsed) {
   color: #f9fafb;
-  background-color: #290f15c7;
+  background-color: #000000c7;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-}
-.accordion__content {
-  padding: 1.4rem 2rem;
+  padding: 2rem;
 }
 
 .accordion__label:hover {
@@ -523,10 +521,26 @@ display: block;
 .accordion__input:checked ~ .accordion__label::after {
   transform: translateY(-50%) rotate(0.5turn);
 }
-/* contenedor servicio responsive  */
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+  background-color: #131111;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
 
-
-
+.accordion-body {
+  padding: 1rem 1.25rem;
+  background-color: black;
+}
 
  /* ASIDE/APARTADO DERECHO HABILIDADES*/
  .apartado_Derecho_habilidades {
