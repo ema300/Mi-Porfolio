@@ -151,6 +151,7 @@ nav label {
   border: 1px solid #4bb153;
   width: 5rem;
   background-color: #2f6f15;
+  color: #ffffff;
   height: 5rem;
   text-align: center;
   user-select: none;
@@ -311,7 +312,7 @@ display: block;
 
  /* CONTENIDO de quien SOY*/
  #contenido {
-  width: 64%;
+  width: 77%;
   float: left;
   background-color: rgb(8 19 21 / 94%);
   margin-top: 2rem;
@@ -351,20 +352,14 @@ display: block;
   #contenido {
     width: 100%;
     float: left;
-    background-color: rgb(0 0 0);
     margin-top: 15rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     border-radius: 2rem;
     background-clip: padding-box;
-    border: 10px solid rgb(17 49 0);
+    /* border: 10px solid rgb(17 49 0); */
   }
-  #contenido h2 {
-    color: #3fda3d;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 2%;
-}
+ 
 }
 
  /* ASIDE/APARTADO DERECHO*/
@@ -401,20 +396,20 @@ display: block;
 @media screen and (max-width: 650px){ 
   .apartado_Derecho {
     width: 100%;
-    height: 82rem;
-    /* background-color: darkred; */
+    height: 88rem;
+    background-color: #0c1824;
     margin-block: 1rem;
-    padding: 1rem;
+    padding: 4rem;
     float: right;
     border-radius: 2rem;
     background-clip: padding-box;
-    border: 10px solid #3b4555;
+    /* border: 10px solid #3b4555; */
 }
-  .apartado_Derecho h2{ 
-    margin-top: 3rem; 
-    font-size: 2.5rem; 
-    text-align: center; 
-  }
+.apartado_Derecho h2 {
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  text-align: center;
+}
   
 #barProgreso {
   width: 70%;
@@ -571,7 +566,8 @@ display: block;
     margin-bottom: 10px;
     border-radius: 20px;
     background-clip: padding-box;
-    border: 10px solid rgb(0 49 49);
+    background-color: #0f3834;
+    /* border: 10px solid rgb(0 49 49); */
 }
   .imagen_servicios {
     width: 98%;
@@ -585,7 +581,7 @@ display: block;
  /* ASIDE/APARTADO DERECHO HABILIDADES*/
  
  .apartado_Derecho_habilidades {
-  width: 35%;
+  width: 22%;
   height: 50rem;
   background-color: rgb(21 21 21);
   margin-block: 2rem;
@@ -595,7 +591,6 @@ display: block;
   background-clip: padding-box;
   /* border: 5px solid rgb(66 97 50); */
 }
-
  
 .apartado_Derecho_habilidades h2 {
   margin-top: 3rem;
@@ -608,13 +603,13 @@ display: block;
   .apartado_Derecho_habilidades {
     width: 100%;
     height: 50rem;
-    /* background-color: rgb(95 51 51); */
+    background-color: rgb(9 40 16);
     margin-block: 1rem;
-    padding: 1rem;
+    padding: 4rem;
     float: right;
     border-radius: 2rem;
     background-clip: padding-box;
-    border: 10px solid rgb(66 97 50);
+    /* border: 10px solid rgb(66 97 50); */
 }
 }
 
@@ -628,17 +623,17 @@ display: block;
 /* FORMULARIO */ 
 
 .contact_form {
-  width: 100%;
+  width: 64%;
   height: 92rem;
   float: left;
-  /* background-color: rgb(92, 44, 44); */
+  background-color: rgb(17 36 13);
   margin-top: 2rem;
   padding: 2rem;
+  /* margin-left: 14rem; */
   border-radius: 2rem;
   background-clip: padding-box;
-  border: 10px solid rgb(14 82 13);
+  /* border: 10px solid rgb(14 82 13); */
 }
-  
 .contact_form input {
   background-color: #fbfbfb;
   width: 100%;
@@ -741,7 +736,7 @@ display: block;
     padding: 2rem;
     border-radius: 2rem;
     background-clip: padding-box;
-    border: 10px solid rgb(14 82 13);
+    /* border: 10px solid rgb(14 82 13); */
   }
     
   .contact_form input {
