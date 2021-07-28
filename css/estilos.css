@@ -259,13 +259,13 @@ display: block;
 
 /* PERFIL */
 .hero-perfil {
-  width: 30rem;
-  border-radius: 50%;
+  width: 28rem;
+  border-radius: 60%;
   /* border: 1px solid rgb(0, 0, 0); */
-  height: 30rem;
+  height: 33rem;
   position: absolute;
-  top: 25%;
-  left: 50%;
+  top: 21%;
+  left: 48%;
   transform: translate(-160%, 55%);
   z-index: 1;
 }
