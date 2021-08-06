@@ -134,7 +134,12 @@ nav label {
     z-index: 100;
 }
 
-
+#wtp {
+  width: 10%;
+  position: absolute;
+  transform: translate(455%, 941%);
+  z-index: 1;
+}
 .navegacion {
   width: 57%;
   max-width: 100rem;
@@ -142,7 +147,7 @@ nav label {
   background: rgb(9 25 2 / 93%);
   border-radius: 2rem;
 }
-} 
+
 ul{
 display: none;
 }
