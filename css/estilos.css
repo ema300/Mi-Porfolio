@@ -10,6 +10,8 @@ html{
 *, *:before, *:after {
 box-sizing: inherit;
 }
+
+
 body{
   font-size: 1.6rem;
   background-color: rgb(0, 0, 0); 
@@ -85,6 +87,8 @@ to{border-right-color: transparent;}
   overflow: hidden;
 }
 }
+
+
 .navegacion {
   width: 70%;
   max-width: 105rem;
@@ -123,16 +127,21 @@ nav label {
 }
  /*BARRA DE MENÚ*/
  @media screen and (max-width: 650px){
-   
+  header {
+    /* background: rgba(0,0,0,0.9); */
+    width: 169%;
+    position: fixed;
+    z-index: 100;
+}
 
 
-  .navegacion {
-    width: 70%;
-    max-width: 100rem;
-    margin: 5% auto;
-    background: rgb(36 76 20 / 65%);
-    border-radius: 2rem;
-    
+.navegacion {
+  width: 57%;
+  max-width: 100rem;
+  margin: 5% auto;
+  background: rgb(9 25 2 / 93%);
+  border-radius: 2rem;
+}
 } 
 ul{
 display: none;
@@ -223,7 +232,6 @@ display: block;
   position: relative;
 }
 .hero-bg {
-  background-repeat: ;
   width: 133%;
   height: 54rem;
   /* margin: 0; */
@@ -347,6 +355,45 @@ display: block;
 #boton_mas_sobre_mi:hover{
  
   background: #2cc51a;
+}
+
+
+.texto {
+  /* font-size:28px; */
+  font-family:helvetica;
+  font-weight:bold;
+  color:#71d90b;
+  /* text-transform:uppercase; */
+}
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 @media screen and (max-width: 650px){ 
   #contenido {
