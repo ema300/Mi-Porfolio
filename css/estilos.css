@@ -87,8 +87,14 @@ to{border-right-color: transparent;}
   overflow: hidden;
 }
 }
-
-
+#wtp {
+  width: 6%;
+  top: 41%;
+  left: 32%;
+  z-index: 100;
+  position: absolute;
+  z-index: 100;
+}
 .navegacion {
   width: 70%;
   max-width: 105rem;
@@ -261,16 +267,15 @@ display: block;
 }
 @media screen and (max-width: 650px){ 
   .hero-bg {
-    width: 45%;
-    height: 63rem;
+    width: 50%;
+    height: 65rem;
     /* margin: 0; */
     border-radius: 0rem;
     /* border: 10px solid rgb(150 150 150); */
     z-index: -1;
     transform: translate(-24%, 0%);
-    position: relative;  
+    position: relative;
 }
-
 /* PERFIL */
 .hero-perfil {
   /* width: 28rem; */
