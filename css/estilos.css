@@ -87,13 +87,16 @@ to{border-right-color: transparent;}
   overflow: hidden;
 }
 }
+#span_wtp {
+  transform: translate(64%, -198%);
+  position: absolute;
+}
 #wtp {
   width: 6%;
-  top: 41%;
-  left: 32%;
   z-index: 100;
   position: absolute;
   z-index: 100;
+  transform: translate(545%, 335%);
 }
 .navegacion {
   width: 70%;
@@ -139,7 +142,9 @@ nav label {
     position: fixed;
     z-index: 100;
 }
-
+#span_wtp{
+  display: none;
+}
 #wtp {
   width: 10%;
   position: absolute;
